@@ -1,0 +1,119 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my recipe",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "RecipeIntent",
+          "slots": [
+            {
+              "name": "cocktail",
+              "type": "AMAZON.Drink"
+            }
+          ],
+          "samples": [
+            "for {cocktail}",
+            "my recipe for {cocktail} ",
+            "What is the recipe for {cocktail}",
+            "how to make {cocktail}",
+            "How do I make {cocktail}",
+            "Tell me about {cocktail}"
+          ]
+        },
+        {
+          "name": "IngredientIntent",
+          "slots": [
+            {
+              "name": "cocktail",
+              "type": "AMAZON.Drink"
+            }
+          ],
+          "samples": [
+            "tell me the ingredients again",
+            "tell me the ingredients for a {cocktail}",
+            "What all is in a {cocktail}",
+            "What is in a {cocktail}",
+            "Ingredients for a {cocktail}",
+            "What are the ingredients for a {cocktail}"
+          ]
+        },
+        {
+          "name": "QuantityIntent",
+          "slots": [
+            {
+              "name": "ingredient",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "cocktail",
+              "type": "AMAZON.Drink"
+            }
+          ],
+          "samples": [
+            "what is the quantity of {ingredient} in {cocktail}",
+            "what is the quantity of {ingredient}",
+            "what is the amount for {ingredient} in {cocktail}",
+            "what is the amount of {ingredient}",
+            "what is the amount of {ingredient} in {cocktail}",
+            "how much {ingredient} do I need in {cocktail}",
+            "how much {ingredient} should I put in {cocktail}",
+            "how much {ingredient} should I use in {cocktail}",
+            "how much {ingredient} in {cocktail}",
+            "what is the amount for {ingredient}",
+            "how much {ingredient} should I put",
+            "how much {ingredient} do I need",
+            "How much {ingredient}"
+          ]
+        },
+        {
+          "name": "ListIntent",
+          "slots": [],
+          "samples": [
+            "list my cocktails",
+            "list all the cocktails",
+            "list all the drinks",
+            "what are my drinks",
+            "Tell me the drinks I like",
+            "Tell me all the drinks I like",
+            "Tell me all the drinks I can make",
+            "Tell me all the drinks ",
+            "Tell me the drinks",
+            "Tell me my favorite drinks",
+            "tell me my drinks"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "12"
+}

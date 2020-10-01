@@ -1,0 +1,1295 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "lame trivia game",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "TriviaIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "answer",
+              "type": "answer"
+            }
+          ],
+          "samples": [
+            "try {number} {answer}",
+            "{number} {answer}",
+            "option {number} {answer}",
+            "maybe {number}",
+            "how about {number}",
+            "try {number}",
+            "{number}",
+            "is it option {number}",
+            "option {number}"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "skip this question",
+            "skip question",
+            "skip",
+            "move to next",
+            "try next question",
+            "move to next question",
+            "next question",
+            "next"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "say that again",
+            "repeat question",
+            "repeat the question",
+            "repeat"
+          ]
+        },
+        {
+          "name": "TriviaAnswerIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "answer"
+            }
+          ],
+          "samples": [
+            "maybe {answer}",
+            "try {answer}",
+            "is it {answer}",
+            "answer is {answer}",
+            "{answer} "
+          ]
+        },
+        {
+          "name": "ScoreIntent",
+          "slots": [],
+          "samples": [
+            "tell me the score",
+            "what is the score",
+            "what is my score",
+            "score"
+          ]
+        },
+        {
+          "name": "DifficultyIntent",
+          "slots": [
+            {
+              "name": "difficulty",
+              "type": "difficulty"
+            }
+          ],
+          "samples": [
+            "{difficulty} difficulty",
+            "difficulty {difficulty}",
+            "{difficulty}"
+          ]
+        },
+        {
+          "name": "CategoryIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "category"
+            }
+          ],
+          "samples": [
+            "what are the available categories",
+            "what are the categories",
+            "tell me the categories",
+            "tell me all the categories",
+            "{category} category",
+            "let us try {category}",
+            "Let us play {category}",
+            "{category}",
+            "Category {category}"
+          ]
+        },
+        {
+          "name": "SkipSelection",
+          "slots": [],
+          "samples": [
+            "skip selection",
+            "skip"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "J.K. Rowling"
+              }
+            },
+            {
+              "name": {
+                "value": "J.R.R. Tolkien"
+              }
+            },
+            {
+              "name": {
+                "value": "Terry Pratchett"
+              }
+            },
+            {
+              "name": {
+                "value": "Daniel Radcliffe"
+              }
+            },
+            {
+              "name": {
+                "value": "Halo 3: Recon"
+              }
+            },
+            {
+              "name": {
+                "value": "Halo 3: Helljumpers"
+              }
+            },
+            {
+              "name": {
+                "value": "Halo 3: Phantom"
+              }
+            },
+            {
+              "name": {
+                "value": "Halo 3: Guerilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Marsh"
+              }
+            },
+            {
+              "name": {
+                "value": "Stotch"
+              }
+            },
+            {
+              "name": {
+                "value": "Broflovski"
+              }
+            },
+            {
+              "name": {
+                "value": "Tweak"
+              }
+            },
+            {
+              "name": {
+                "value": "Six"
+              }
+            },
+            {
+              "name": {
+                "value": "Seven"
+              }
+            },
+            {
+              "name": {
+                "value": "Five"
+              }
+            },
+            {
+              "name": {
+                "value": "Eight"
+              }
+            },
+            {
+              "name": {
+                "value": "Iron"
+              }
+            },
+            {
+              "name": {
+                "value": "Gold"
+              }
+            },
+            {
+              "name": {
+                "value": "Silver"
+              }
+            },
+            {
+              "name": {
+                "value": "Tin"
+              }
+            },
+            {
+              "name": {
+                "value": "The Vikings "
+              }
+            },
+            {
+              "name": {
+                "value": "The Long Ships"
+              }
+            },
+            {
+              "name": {
+                "value": "Prince Valiant"
+              }
+            },
+            {
+              "name": {
+                "value": "Spartacus"
+              }
+            },
+            {
+              "name": {
+                "value": "Cleveland Brown"
+              }
+            },
+            {
+              "name": {
+                "value": "Glenn Quagmire"
+              }
+            },
+            {
+              "name": {
+                "value": "Joe Swanson"
+              }
+            },
+            {
+              "name": {
+                "value": "The Greased-up Deaf Guy"
+              }
+            },
+            {
+              "name": {
+                "value": "Johnny Cash"
+              }
+            },
+            {
+              "name": {
+                "value": "Bob Dylan"
+              }
+            },
+            {
+              "name": {
+                "value": "Willie Nelson"
+              }
+            },
+            {
+              "name": {
+                "value": "Kris Kristofferson"
+              }
+            },
+            {
+              "name": {
+                "value": "Hairy"
+              }
+            },
+            {
+              "name": {
+                "value": "Rude"
+              }
+            },
+            {
+              "name": {
+                "value": "Funny"
+              }
+            },
+            {
+              "name": {
+                "value": "Tall"
+              }
+            },
+            {
+              "name": {
+                "value": "France"
+              }
+            },
+            {
+              "name": {
+                "value": "Slovenia"
+              }
+            },
+            {
+              "name": {
+                "value": "Switzerland"
+              }
+            },
+            {
+              "name": {
+                "value": "Slovakia"
+              }
+            },
+            {
+              "name": {
+                "value": "50"
+              }
+            },
+            {
+              "name": {
+                "value": "59"
+              }
+            },
+            {
+              "name": {
+                "value": "60"
+              }
+            },
+            {
+              "name": {
+                "value": "25"
+              }
+            },
+            {
+              "name": {
+                "value": "Red"
+              }
+            },
+            {
+              "name": {
+                "value": "White"
+              }
+            },
+            {
+              "name": {
+                "value": "Yellow"
+              }
+            },
+            {
+              "name": {
+                "value": "Black"
+              }
+            },
+            {
+              "name": {
+                "value": "Normandy"
+              }
+            },
+            {
+              "name": {
+                "value": "Osiris"
+              }
+            },
+            {
+              "name": {
+                "value": "Infinity"
+              }
+            },
+            {
+              "name": {
+                "value": "Endeavour"
+              }
+            },
+            {
+              "name": {
+                "value": "Santa Clara"
+              }
+            },
+            {
+              "name": {
+                "value": "Palo Alto"
+              }
+            },
+            {
+              "name": {
+                "value": "Cupertino"
+              }
+            },
+            {
+              "name": {
+                "value": "Mountain View"
+              }
+            },
+            {
+              "name": {
+                "value": "Mozambique"
+              }
+            },
+            {
+              "name": {
+                "value": "Botswana"
+              }
+            },
+            {
+              "name": {
+                "value": "Gabon"
+              }
+            },
+            {
+              "name": {
+                "value": "Togo"
+              }
+            },
+            {
+              "name": {
+                "value": "48"
+              }
+            },
+            {
+              "name": {
+                "value": "3"
+              }
+            },
+            {
+              "name": {
+                "value": "Atlanta"
+              }
+            },
+            {
+              "name": {
+                "value": "Savannah"
+              }
+            },
+            {
+              "name": {
+                "value": "Augusta"
+              }
+            },
+            {
+              "name": {
+                "value": "Marietta"
+              }
+            },
+            {
+              "name": {
+                "value": "Apollo 17"
+              }
+            },
+            {
+              "name": {
+                "value": "Apollo 13"
+              }
+            },
+            {
+              "name": {
+                "value": "Apollo 11"
+              }
+            },
+            {
+              "name": {
+                "value": "Apollo 15"
+              }
+            },
+            {
+              "name": {
+                "value": "Lewis Hamilton"
+              }
+            },
+            {
+              "name": {
+                "value": "Nico Rosberg"
+              }
+            },
+            {
+              "name": {
+                "value": "Sebastian Vettel"
+              }
+            },
+            {
+              "name": {
+                "value": "Jenson Button"
+              }
+            },
+            {
+              "name": {
+                "value": "Skrillex"
+              }
+            },
+            {
+              "name": {
+                "value": "Diplo"
+              }
+            },
+            {
+              "name": {
+                "value": "Jillionaire"
+              }
+            },
+            {
+              "name": {
+                "value": "Walshy Fire"
+              }
+            },
+            {
+              "name": {
+                "value": "Andy"
+              }
+            },
+            {
+              "name": {
+                "value": "Edward"
+              }
+            },
+            {
+              "name": {
+                "value": "Danny"
+              }
+            },
+            {
+              "name": {
+                "value": "Matt"
+              }
+            },
+            {
+              "name": {
+                "value": "Big Mouth Billy Bass"
+              }
+            },
+            {
+              "name": {
+                "value": "Big Billy Bass"
+              }
+            },
+            {
+              "name": {
+                "value": "Singing Fish"
+              }
+            },
+            {
+              "name": {
+                "value": "Sardeen"
+              }
+            },
+            {
+              "name": {
+                "value": "Toyota Prius"
+              }
+            },
+            {
+              "name": {
+                "value": "Chevrolet Volt"
+              }
+            },
+            {
+              "name": {
+                "value": "Honda Fit"
+              }
+            },
+            {
+              "name": {
+                "value": "Peugeot 308 R HYbrid"
+              }
+            },
+            {
+              "name": {
+                "value": "BMW M3 GTR"
+              }
+            },
+            {
+              "name": {
+                "value": "Porsche 911 Turbo"
+              }
+            },
+            {
+              "name": {
+                "value": "Nissan 240SX"
+              }
+            },
+            {
+              "name": {
+                "value": "Ford Mustang"
+              }
+            },
+            {
+              "name": {
+                "value": "Combustion"
+              }
+            },
+            {
+              "name": {
+                "value": "Lubrication"
+              }
+            },
+            {
+              "name": {
+                "value": "Cooling"
+              }
+            },
+            {
+              "name": {
+                "value": "Reduce corrosion"
+              }
+            },
+            {
+              "name": {
+                "value": "Valkyrie"
+              }
+            },
+            {
+              "name": {
+                "value": "Earthshatter"
+              }
+            },
+            {
+              "name": {
+                "value": "Rocket Barrage"
+              }
+            },
+            {
+              "name": {
+                "value": "Molten Core"
+              }
+            },
+            {
+              "name": {
+                "value": "80"
+              }
+            },
+            {
+              "name": {
+                "value": "53"
+              }
+            },
+            {
+              "name": {
+                "value": "443"
+              }
+            },
+            {
+              "name": {
+                "value": "23"
+              }
+            },
+            {
+              "name": {
+                "value": "Andorra"
+              }
+            },
+            {
+              "name": {
+                "value": "Liechtenstein"
+              }
+            },
+            {
+              "name": {
+                "value": "Monaco"
+              }
+            },
+            {
+              "name": {
+                "value": "San Marino"
+              }
+            },
+            {
+              "name": {
+                "value": "Heartbleed"
+              }
+            },
+            {
+              "name": {
+                "value": "Shellshock"
+              }
+            },
+            {
+              "name": {
+                "value": "Corrupted Blood"
+              }
+            },
+            {
+              "name": {
+                "value": "Shellscript"
+              }
+            },
+            {
+              "name": {
+                "value": "2013"
+              }
+            },
+            {
+              "name": {
+                "value": "2012"
+              }
+            },
+            {
+              "name": {
+                "value": "2014"
+              }
+            },
+            {
+              "name": {
+                "value": "2011"
+              }
+            },
+            {
+              "name": {
+                "value": "Prince Edward Island"
+              }
+            },
+            {
+              "name": {
+                "value": "Saskachewan"
+              }
+            },
+            {
+              "name": {
+                "value": "Northwest Terrirories"
+              }
+            },
+            {
+              "name": {
+                "value": "Ontario"
+              }
+            },
+            {
+              "name": {
+                "value": "150"
+              }
+            },
+            {
+              "name": {
+                "value": "200"
+              }
+            },
+            {
+              "name": {
+                "value": "100"
+              }
+            },
+            {
+              "name": {
+                "value": "155"
+              }
+            },
+            {
+              "name": {
+                "value": "Midnight"
+              }
+            },
+            {
+              "name": {
+                "value": "Evening"
+              }
+            },
+            {
+              "name": {
+                "value": "Morning"
+              }
+            },
+            {
+              "name": {
+                "value": "Afternoon"
+              }
+            },
+            {
+              "name": {
+                "value": "9"
+              }
+            },
+            {
+              "name": {
+                "value": "1"
+              }
+            },
+            {
+              "name": {
+                "value": "6"
+              }
+            },
+            {
+              "name": {
+                "value": "10"
+              }
+            },
+            {
+              "name": {
+                "value": "Michelangelo"
+              }
+            },
+            {
+              "name": {
+                "value": "Leonardo"
+              }
+            },
+            {
+              "name": {
+                "value": "Donatello"
+              }
+            },
+            {
+              "name": {
+                "value": "Raphael"
+              }
+            },
+            {
+              "name": {
+                "value": "Dimitri Lousteau"
+              }
+            },
+            {
+              "name": {
+                "value": "Mz. Ruby"
+              }
+            },
+            {
+              "name": {
+                "value": "Muggshot"
+              }
+            },
+            {
+              "name": {
+                "value": "Clockwerk"
+              }
+            },
+            {
+              "name": {
+                "value": "Auto"
+              }
+            },
+            {
+              "name": {
+                "value": "Eddie"
+              }
+            },
+            {
+              "name": {
+                "value": "Tango"
+              }
+            },
+            {
+              "name": {
+                "value": "Rush"
+              }
+            },
+            {
+              "name": {
+                "value": "New York"
+              }
+            },
+            {
+              "name": {
+                "value": "Mexico City"
+              }
+            },
+            {
+              "name": {
+                "value": "Los Angeles"
+              }
+            },
+            {
+              "name": {
+                "value": "Fluffy"
+              }
+            },
+            {
+              "name": {
+                "value": "Baxter"
+              }
+            },
+            {
+              "name": {
+                "value": "Fido"
+              }
+            },
+            {
+              "name": {
+                "value": "Henry"
+              }
+            },
+            {
+              "name": {
+                "value": "Lord Buckethead"
+              }
+            },
+            {
+              "name": {
+                "value": "James Francis"
+              }
+            },
+            {
+              "name": {
+                "value": "Robert Wimbledon"
+              }
+            },
+            {
+              "name": {
+                "value": "Sir Crumpetsby"
+              }
+            },
+            {
+              "name": {
+                "value": "Sarah"
+              }
+            },
+            {
+              "name": {
+                "value": "Ellie"
+              }
+            },
+            {
+              "name": {
+                "value": "Tess"
+              }
+            },
+            {
+              "name": {
+                "value": "Marlene"
+              }
+            },
+            {
+              "name": {
+                "value": "Hideo Kojima"
+              }
+            },
+            {
+              "name": {
+                "value": "Hiroshi Yamauchi"
+              }
+            },
+            {
+              "name": {
+                "value": "Shigeru Miyamoto"
+              }
+            },
+            {
+              "name": {
+                "value": "Gunpei Yokoi"
+              }
+            },
+            {
+              "name": {
+                "value": "Reiner Knizia"
+              }
+            },
+            {
+              "name": {
+                "value": "Bruno Cathala"
+              }
+            },
+            {
+              "name": {
+                "value": "Uwe Rosenburg"
+              }
+            },
+            {
+              "name": {
+                "value": "Allison Kline"
+              }
+            },
+            {
+              "name": {
+                "value": "Vilnius"
+              }
+            },
+            {
+              "name": {
+                "value": "Tallinn"
+              }
+            },
+            {
+              "name": {
+                "value": "Helsinki"
+              }
+            },
+            {
+              "name": {
+                "value": "Riga"
+              }
+            },
+            {
+              "name": {
+                "value": "Bones"
+              }
+            },
+            {
+              "name": {
+                "value": "Kyoto Animation"
+              }
+            },
+            {
+              "name": {
+                "value": "xebec"
+              }
+            },
+            {
+              "name": {
+                "value": "Production I.G"
+              }
+            },
+            {
+              "name": {
+                "value": "Constantinople"
+              }
+            },
+            {
+              "name": {
+                "value": "Rome"
+              }
+            },
+            {
+              "name": {
+                "value": "Hamburg"
+              }
+            },
+            {
+              "name": {
+                "value": "Athens"
+              }
+            },
+            {
+              "name": {
+                "value": "Jake Marshall"
+              }
+            },
+            {
+              "name": {
+                "value": "Godot"
+              }
+            },
+            {
+              "name": {
+                "value": "Miles Edgeworth"
+              }
+            },
+            {
+              "name": {
+                "value": "Jacques Portsman"
+              }
+            },
+            {
+              "name": {
+                "value": "A robot"
+              }
+            },
+            {
+              "name": {
+                "value": "A pickup truck"
+              }
+            },
+            {
+              "name": {
+                "value": "An motorcycle"
+              }
+            },
+            {
+              "name": {
+                "value": "A motorboat"
+              }
+            },
+            {
+              "name": {
+                "value": "1987"
+              }
+            },
+            {
+              "name": {
+                "value": "1985"
+              }
+            },
+            {
+              "name": {
+                "value": "1986"
+              }
+            },
+            {
+              "name": {
+                "value": "1988"
+              }
+            }
+          ],
+          "name": "answer"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "easier"
+              }
+            },
+            {
+              "name": {
+                "value": "complicated"
+              }
+            },
+            {
+              "name": {
+                "value": "straightforward"
+              }
+            },
+            {
+              "name": {
+                "value": "harder"
+              }
+            },
+            {
+              "name": {
+                "value": "difficult"
+              }
+            },
+            {
+              "name": {
+                "value": "hard"
+              }
+            },
+            {
+              "name": {
+                "value": "medium"
+              }
+            },
+            {
+              "name": {
+                "value": "easy"
+              }
+            }
+          ],
+          "name": "difficulty"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Any Category"
+              }
+            },
+            {
+              "name": {
+                "value": "General Knowledge"
+              }
+            },
+            {
+              "name": {
+                "value": "Books"
+              }
+            },
+            {
+              "name": {
+                "value": "Film"
+              }
+            },
+            {
+              "name": {
+                "value": "Music"
+              }
+            },
+            {
+              "name": {
+                "value": "Musicals and Theatres"
+              }
+            },
+            {
+              "name": {
+                "value": "Television"
+              }
+            },
+            {
+              "name": {
+                "value": "Video Games"
+              }
+            },
+            {
+              "name": {
+                "value": "Board Games "
+              }
+            },
+            {
+              "name": {
+                "value": "Science and Nature"
+              }
+            },
+            {
+              "name": {
+                "value": "Computers"
+              }
+            },
+            {
+              "name": {
+                "value": "Mathematics"
+              }
+            },
+            {
+              "name": {
+                "value": "Mythology"
+              }
+            },
+            {
+              "name": {
+                "value": "Sports"
+              }
+            },
+            {
+              "name": {
+                "value": "Geography"
+              }
+            },
+            {
+              "name": {
+                "value": "History"
+              }
+            },
+            {
+              "name": {
+                "value": "Politics"
+              }
+            },
+            {
+              "name": {
+                "value": "Art"
+              }
+            },
+            {
+              "name": {
+                "value": "Celebrities"
+              }
+            },
+            {
+              "name": {
+                "value": "Animals"
+              }
+            },
+            {
+              "name": {
+                "value": "Vehicles"
+              }
+            },
+            {
+              "name": {
+                "value": "Comics"
+              }
+            },
+            {
+              "name": {
+                "value": "Gadgets"
+              }
+            },
+            {
+              "name": {
+                "value": "Japanese Anime and Manga "
+              }
+            },
+            {
+              "name": {
+                "value": "Cartoon and Animations"
+              }
+            }
+          ],
+          "name": "category"
+        }
+      ]
+    }
+  },
+  "version": "33"
+}

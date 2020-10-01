@@ -1,0 +1,71 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Great trivia game with categories and difficulty levels!",
+          "examplePhrases": [
+            "Alexa open lame trivia game",
+            "Alexa play lame trivia game"
+          ],
+          "keywords": [
+            "trivia",
+            "game",
+            "fun",
+            "knowledge",
+            "education",
+            "social",
+            "competition"
+          ],
+          "name": "Lame Trivia",
+          "description": "Tell Alexa a category and a difficulty level and Alexa will ask you five multiple choice questions. Great to play with friends!",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Start my saying \"Alexa, open lame trivia game\". After this, Alexa should give all the necessary instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:224223511377:function:4c4c1fd1-790d-43d3-9002-914270809f5e:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:224223511377:function:4c4c1fd1-790d-43d3-9002-914270809f5e:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:224223511377:function:4c4c1fd1-790d-43d3-9002-914270809f5e:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:224223511377:function:4c4c1fd1-790d-43d3-9002-914270809f5e:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
