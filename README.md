@@ -1,2 +1,2 @@
 # alexa-skills
-Alexa skills
+Alexa skills with AWS lambdas (python)
